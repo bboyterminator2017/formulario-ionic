@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-      <ion-title>Categorias</ion-title>
+      <ion-title>Clientes</ion-title>
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
@@ -14,8 +14,17 @@
 <ion-refresher-content></ion-refresher-content>
 </ion-refresher>
   <ion-list>
-      <ion-item *ngFor="let c of categoriasPage">
-        <p>{{c.nomeCategoria}}</p>
+      <ion-item *ngFor="let cl of clientesPage">
+        <p>{{cl.codigoCliente}}</p>
+        <p>{{cl.cpf}}</p>
+        <p>{{cl.nome}}</p>
+        <p>{{cl.endereco}}</p>
+        <p>{{cl.municipio}}</p>
+        <p>{{cl.estado}}</p>
+        <p>{{cl.telefone}}</p>
+        <p>{{cl.email}}</p>
+        <p>{{cl.senha}}</p>
+
         
       </ion-item>
     </ion-list>
