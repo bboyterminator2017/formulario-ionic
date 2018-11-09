@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriasService } from '../service/categorias.service';
 import { ClientesService } from '../service/clientes.service';
+import { ProdutosService } from '../service/produtos.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ClientesService } from '../service/clientes.service';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CategoriasService,
-    ClientesService
+    ClientesService,
+    ProdutosService
   ]
 })
 export class AppModule {}

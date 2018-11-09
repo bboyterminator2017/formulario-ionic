@@ -22,7 +22,7 @@ export class MyApp {
       { title: 'Home', component: 'HomePage' },
       { title: 'Categorias', component: 'CategoriasPage' },
       { title: 'Cliente', component: 'ClientePage' },
-      { title: 'Novo Cliente', component: 'NovoClientePage' }
+      { title: 'Novo Cliente', component: 'NovoClientePage' },
     ];
 
   }
